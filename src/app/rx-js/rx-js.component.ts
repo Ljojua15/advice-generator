@@ -14,7 +14,7 @@ export class RxJsComponent implements OnInit {
   myTest$ = fromEvent(document, 'click');
   private http = inject(HttpClient);
   x!: any;
-  capital: string = 'moscow';
+  capital: string = 'tokyo';
 
   ngOnInit(): void {
     this.myTest$.subscribe(() => {
@@ -32,9 +32,11 @@ export class RxJsComponent implements OnInit {
             flag: res[0].flags.png,
             Currency: (Object.values(res[0].currencies)[0] as any).name,
             symbol: (Object.values(res[0].currencies)[0] as any).symbol,
-
             border: res[0].borders,
             continents: res[0].continents,
+            languages: Object.values(res[0].languages)[0] as any,
+            region: res[0].region,
+            weekDayes: res[0].startOfWeek,
           };
         })
       )
