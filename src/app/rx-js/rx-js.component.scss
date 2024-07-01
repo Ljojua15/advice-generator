@@ -1,0 +1,26 @@
+.main{
+  margin: auto;
+  background-color: cadetblue;
+  max-width: 100%;
+  width: 1400px;
+  height: 95vh;
+  max-width: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  &__search{
+    input{
+      // float: right;
+      padding: 6px;
+      border: none;
+      margin-top: 8px;
+      margin-right: 16px;
+      font-size: 17px;
+    }
+    }
+  }
+
+
