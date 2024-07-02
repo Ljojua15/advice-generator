@@ -1,11 +1,24 @@
 <div class="main">
     <div class="main__search">
       <input type="text" placeholder="Search..">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button type="submit">Submit</button>
     </div>
 
 
+
+
     <div class="main__contnet">
+      <div class="main__contnet__countyName">
+        <p>{{ x?.countryName | uppercase }}</p>
+        <img [src]="x?.flag" alt="">
+      </div>
+
+        <ul class="main__contnet__population">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
 
     </div>
 </div>

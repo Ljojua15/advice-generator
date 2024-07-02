@@ -1,4 +1,4 @@
-import { CurrencyPipe } from '@angular/common';
+import { CommonModule, CurrencyPipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
 import { fromEvent, map, scan, throttleTime } from 'rxjs';
@@ -6,7 +6,7 @@ import { fromEvent, map, scan, throttleTime } from 'rxjs';
 @Component({
   selector: 'app-rx-js',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './rx-js.component.html',
   styleUrl: './rx-js.component.scss',
 })

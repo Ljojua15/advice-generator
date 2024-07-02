@@ -12,14 +12,57 @@
   flex-direction: column;
   position: relative;
   &__search{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 2%;
+  display: flex;
+  align-items: center;
+  background-color: rebeccapurple;
+  // justify-content: center;
     input{
-      // float: right;
+      float: left;
       padding: 6px;
       border: none;
-      margin-top: 8px;
-      margin-right: 16px;
       font-size: 17px;
     }
+     button{
+      width: 60px;
+      height: 30px;
+      cursor: pointer;
+      margin-left: 5px;
+
+
+    }
+    }
+    &__contnet{
+      width: calc(1400px - 5%);
+      height: auto;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+      &__countyName, &__population{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 360px;
+        height: 280px;
+        background-color: blueviolet;
+         p{
+           font-size: 20px;
+          font-weight: bold;
+        }
+
+      }
+      &__population{
+        margin: 20px;
+        align-items: start;
+        justify-content: space-around;
+      }
     }
   }
 
