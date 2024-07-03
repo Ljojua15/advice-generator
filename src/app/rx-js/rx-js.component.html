@@ -14,11 +14,19 @@
       </div>
 
         <ul class="main__contnet__population">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>{{x?.population}}</li>
+          <li>{{x?.languages  }}</li>
+          <li>{{x?.Currency  }} {{x?.symbol }}</li>
+          <li>{{x?.continents}}</li>
         </ul>
-
     </div>
+
+    <div class="main__map">
+      <p>{{x?.map}}</p>
+      <iframe [src]="x?.map | safeUrl" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
 </div>
+
+
+
